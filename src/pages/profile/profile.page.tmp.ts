@@ -2,11 +2,11 @@ export default `
     <div class="container">
         <div class="profile-page">
             <div class="profile">
-                <div class="profile__avatar-block">
-                    <button class="profile__avatar" type="button"></button>
+                <div class="flex flex-center">
+                    {{> avatar clickable="true" }}
                 </div>
 
-                <h1 class="profile__username">Иван</h1>
+                <h1 class="profile__username text-center">Иван</h1>
 
                 {{> userInfo userInfo readonly='true' }}
                 
@@ -18,7 +18,7 @@ export default `
                         <a href="#">Изменить пароль</a>
                     </div>
                     <div>
-                        <a href="#">Выйти</a>
+                        <a class="text-alert" href="#">Выйти</a>
                     </div>
                 </div>
             </div>

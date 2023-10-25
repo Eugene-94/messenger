@@ -1,17 +1,18 @@
 export default `
     <div class="user-edit-page">
         <div class="profile">
-            <div class="profile__avatar-block">
-                <button class="profile__avatar" type="button"></button>
+            <div class="flex flex-center">
+                {{> avatar }}
             </div>
 
             <form class="user-edit-page__form">
                 {{> userInfo userInfo }}
+
+                <div class="flex flex-center user-edit-page__form-actions">
+                    {{> button label='Сохранить' type='submit' }}
+                </div>
             </form>
 
-            <div class="flex flex-center">
-                {{> button label='Сохранить' type='submit' }}
-            </div>
         </div>
     </div>
 `;
